@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Koneva_cpu_server</title>
+    <style>
+        .size_control {
+        max-width: 1000px;
+        }
+        .center {
+        text-align: center;
+        }
+        .text {
+        margin: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class = "size_control">
+    <h1 class = "center">Koneva cpu server</h1>
+    {% for i in list_with_cpu_data %}
+    <p class="center text">{{i}}</p>
+    {% endfor %}
+</div>
+</body>
+</html>
